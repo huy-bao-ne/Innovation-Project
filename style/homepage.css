@@ -1,0 +1,191 @@
+/* Reset margin & padding để loại bỏ viền trắng */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Đảm bảo trang chiếm toàn bộ chiều rộng */
+body, html {
+  width: 100vw;
+  overflow-x: hidden; /* Ngăn chặn cuộn ngang nếu có */
+}
+
+.homepage {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(to right, #4f5052, #414346);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Navbar fix */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Fix nút login bị lệch */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.logout-btn {
+  border: 1px solid red;
+  color: red;
+}
+
+.logout-btn:hover {
+  background: red;
+  color: white;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 150px 20px 50px; /* Đẩy nội dung xuống dưới navbar */
+  margin-top: 60px;
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background: #ff9800;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background: #e68900;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 25px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.feature h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+.role-selection {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.role-selection h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.role-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.role-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.role-btn.student {
+  background-color: #ff9800;
+  color: white;
+}
+
+.role-btn.teacher {
+  background-color: #4caf50;
+  color: white;
+}
+
+.role-btn:hover {
+  opacity: 0.8;
+}
