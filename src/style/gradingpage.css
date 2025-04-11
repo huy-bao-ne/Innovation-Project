@@ -1,0 +1,125 @@
+/* --- TOÀN BỘ TRANG --- */
+.grading-container {
+  font-family: "Poppins", sans-serif;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: 0.3s;
+}
+
+h2 {
+  font-size: 26px;
+  color: #2C3E50;
+}
+
+.sub-heading {
+  color: #7f8c8d;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+/* --- KHU VỰC CÂU HỎI --- */
+.question-section {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* --- CÂU HỎI INDIVIDUAL --- */
+.question-item {
+  background: #ecf0f1;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-number {
+  font-weight: bold;
+  font-size: 18px;
+  color: #2C3E50;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e74c3c;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.delete-button:hover {
+  color: #c0392b;
+}
+
+/* --- Ô NHẬP CÂU HỎI VÀ TRẢ LỜI --- */
+.question-input,
+.answer-input {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid #dcdde1;
+  border-radius: 10px;
+  background: #ffffff;
+  transition: 0.3s;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.question-input:focus,
+.answer-input:focus {
+  border-color: #3498DB;
+  outline: none;
+}
+
+/* --- NÚT THÊM CÂU HỎI --- */
+.add-question-button {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+  margin-top: 15px;
+  display: block;
+  width: 100%;
+}
+
+.add-question-button:hover {
+  background: #219150;
+}
+
+/* --- NÚT GỬI BÀI TẬP --- */
+.submit-button {
+  background: #3498DB;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background: #2C3E50;
+}

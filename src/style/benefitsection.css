@@ -1,0 +1,73 @@
+.benefit-section {
+  background-color: #2d56a3;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.benefit-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.benefit-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.benefit-card {
+  background-color: #f8f0ff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(49, 6, 158, 0.1);
+  width: 320px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  color: #181818; /* Đảm bảo chữ có màu đậm */
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-icon {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.benefit-title-card {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #181818; /* Đảm bảo tiêu đề có màu đậm */
+}
+
+.benefit-description {
+  font-size: 16px;
+  color: #333; /* Điều chỉnh để chữ dễ đọc hơn */
+}
+
+.benefit-stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.benefit-stat {
+  text-align: center;
+}
+
+.benefit-stat-number {
+  font-size: 36px;
+  font-weight: bold;
+  color: #181818;
+}
+
+.benefit-section {
+  color: rgb(255, 255, 255) !important;
+}
+
